@@ -1,0 +1,13 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# definition of myself
+/.git/
+/.myeclipse/
+/.settings/
+/.classpath
+/.mymetadata
+/.project

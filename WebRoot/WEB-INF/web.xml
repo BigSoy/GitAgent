@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	
+  <servlet>
+    <servlet-name>PushServlet</servlet-name>
+    <servlet-class>servlet.PushServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PullServlet</servlet-name>
+    <servlet-class>servlet.PullServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VersionResetServlet</servlet-name>
+    <servlet-class>servlet.VersionResetServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PushServlet</servlet-name>
+    <url-pattern>/push</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PullServlet</servlet-name>
+    <url-pattern>/pull</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VersionResetServlet</servlet-name>
+    <url-pattern>/reset</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
